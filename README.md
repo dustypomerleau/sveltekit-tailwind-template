@@ -2,7 +2,7 @@
 
 This repo is a working skeleton project that integrates Tailwind's JIT mode with SvelteKit. You can name and organize your CSS files however you like—the `styles` directory is just personal preference.
 
-## Steps
+## Steps to reproduce
 
 1. Set up the project structure, and rename Tailwind and PostCSS config files to `.cjs` format:
 
