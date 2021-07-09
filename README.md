@@ -8,14 +8,23 @@ This repo is a working skeleton project that integrates Tailwind's JIT mode with
 
 ```bash
 npm init svelte@next my-app
+
 cd my-app
+
 npm install
+
 npm install --save-dev autoprefixer@latest postcss@latest tailwindcss@latest
+
 npx tailwindcss init -p
+
 mv tailwind.config.js tailwind.config.cjs
+
 mv postcss.config.js postcss.config.cjs
+
 mkdir src/styles
+
 touch src/styles/styles.css
+
 touch src/routes/__layout.svelte
 ```
 
