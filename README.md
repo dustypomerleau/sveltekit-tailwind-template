@@ -19,7 +19,7 @@ touch src/styles/styles.css
 touch src/routes/__layout.svelte
 ```
 
-1. Edit the Tailwind config to use JIT mode and purge appropriate files:
+2. Edit the Tailwind config to use JIT mode and purge appropriate files:
 
 ```js
 // tailwind.config.cjs
@@ -33,7 +33,7 @@ module.exports = {
 }
 ```
 
-1. Set the `TAILWIND_MODE` environment variable to `watch` inside the `dev` script:
+3. Set the `TAILWIND_MODE` environment variable to `watch` inside the `dev` script:
 
 ```js
 // package.json
@@ -46,7 +46,7 @@ module.exports = {
 //...
 ```
 
-1. Add base Tailwind styles:
+4. Add base Tailwind styles:
 
 ```css
 /* styles/styles.css */
@@ -56,7 +56,7 @@ module.exports = {
 @tailwind utilities;
 ```
 
-1. Import Tailwind styles to `__layout.svelte`:
+5. Import Tailwind styles to `__layout.svelte`:
 
 ```html
 <!-- src/routes/__layout.svelte -->
@@ -68,7 +68,7 @@ module.exports = {
 <div id="test-div" class="bg-blue-500">Edit the classes on this div in <code>__layout.svelte</code> to test HMR</div>
 ```
 
-1. Start the dev server and visit http://localhost:3000/:
+6. Start the dev server and visit http://localhost:3000/:
 
 ```bash
 npm run dev
